@@ -2192,6 +2192,11 @@ img {
   background-position: top right;
   background-size: cover;
 }
+.bg-image-custom {
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: cover;
+}
 
 .bg-image-100 {
   background-repeat: no-repeat;
