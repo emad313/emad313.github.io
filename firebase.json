@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "emad-uddin",
+    "site": "emad-uddin0",
     "public": "public",
     "ignore": [
       "firebase.json",
