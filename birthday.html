@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Birthday</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mastura's Birthday</title>
+	<meta charset="UTF-8"/>
+    <meta name="description" content="Happy Birthday">
+    <meta name="robots" content="index, follow"/>
+    <link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/"/>
+    <meta name="keywords" content="Birthday, Happy">
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting"/>
+    <meta property="og:image" content="favicon.ico"/>
+    <meta property="og:description" content="Wish you a very Happy Birthday">
+    <!-- End of Facebook Meta Tags -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="birthdayassets/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -20,11 +33,19 @@
 	<link rel="stylesheet" type="text/css" href="birthdayassets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="birthdayassets/css/main.css">
 <!--===============================================================================================-->
+
+<!-- Birthday Store -->
+<link rel="stylesheet" href="birthdaystore/assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="birthdaystore/assets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="birthdaystore/assets/loading.css">
+    <link rel="stylesheet/less" href="birthdaystore/assets/cake.less">
+    <script src="birthdaystore/assets/less.min.js"></script>
+    <script src="birthdaystore/config.js"></script>
 </head>
 <body>
 	
 	
-	<div class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('birthdayassets/images/bg01.jpg');">
+	<div id="countdown" display="none" class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('birthdayassets/images/bg01.jpg'); display:none;">
 		<div class="flex-w flex-sb-m p-l-80 p-r-74 p-b-175 respon5">
 			<div class="wrappic1 m-r-30 m-t-10 m-b-10">
 				<!-- <a href="#"><img src="birthdayassets/images/icons/logo.png" alt="LOGO"></a> -->
@@ -68,6 +89,107 @@
 		</div>
 	</div>
 
+	<div id="birthdaytime" style="display: none;">
+		<div class="loading"></div>
+<audio class="song" controls loop>
+    <source src="birthdaystore/assets/hbd.mp3"></source>
+    Your browser isn't invited for super fun audio time.
+</audio>
+<div class="balloons text-center" id="b1">
+    <h2 style="color:#F2B300;">M</h2>
+</div>
+<div class="balloons text-center" id="b2">
+    <h2 style="color:#0719D4;">A</h2>
+</div>
+<div class="balloons text-center" id="b3">
+    <h2 style="color:#D14D39;">S</h2>
+</div>
+<div class="balloons text-center" id="b4">
+    <h2 style="color:#8FAD00;">T</h2>
+</div>
+<div class="balloons text-center" id="b5">
+    <h2 style="color:#8377E4;">U</h2>
+</div>
+<div class="balloons text-center" id="b6">
+    <h2 style="color:#99C96A;">R</h2>
+</div>
+<div class="balloons text-center" id="b7">
+    <h2 style="color:#20CFB4;">A</h2>
+</div>
+
+<img src="birthdaystore/assets/Balloon-Border.png" width="100%" class="balloon-border">
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_yellow"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_red"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_blue"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_green"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_pink"></div>
+        </div>
+        <div class="col-md-2 col-xs-2 bulb-holder">
+            <div class="bulb" id="bulb_orange"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="birthdaystore/assets/banner.png" class="bannar">
+        </div>
+    </div>
+    <!-- <div class="row message">
+        <div class="col-md-12"><p>Khushbu</p></div>
+    </div> -->
+    <div class="row cake-cover">
+        <div class="col-md-12 texr-center">
+            <div class="cake">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="cobertura"></div>
+                <div class="bizcocho"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row message">
+        <div class="col-md-12" id="texts-container">
+        </div>
+    </div>
+    <div class="navbar navbar-fixed-bottom">
+        <div class="row">
+            <div class="col-md-6 text-center col-md-offset-3">
+                <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+                <button class="btn btn-primary" id="play">Play Music</button>
+                <button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+                <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+                <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+                <button class="btn btn-primary" id="light_candle"> Light Candle</button>
+                <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+                <button class="btn btn-primary" id="story">A mesage for you</button>
+                <!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+            </div>
+        </div>
+    </div>
+
+
+</div>
+	</div>
+	
+
 
 
 	
@@ -100,6 +222,23 @@
 			//go to " http://momentjs.com/timezone/ " to get timezone
 		});
 
+		// If date is 11th February 2024 hide the countdown and show the birthday message
+		var date = new Date();
+		var day = date.getDate();
+		var month = date.getMonth() + 1;
+		var year = date.getFullYear();
+		if(day == 10 && month == 2 && year == 2024){
+			var countdown = document.getElementById('countdown');
+			countdown.style.display = 'none';
+			var birthdaytime = document.getElementById('birthdaytime');
+			birthdaytime.style.display = 'block';
+		}else{
+			var countdown = document.getElementById('countdown');
+			countdown.style.display = 'block';
+			var birthdaytime = document.getElementById('birthdaytime');
+			birthdaytime.style.display = 'none';
+		}
+
 		
 	</script>
 <!--===============================================================================================-->
@@ -111,6 +250,14 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="birthdayassets/js/main.js"></script>
+
+
+	<!-- Birthdaystore -->
+	<script src="birthdaystore/assets/jquery.min.js"></script>
+<script src="./birthdaystore/assets/bootstrap.min.js"></script>
+<script src="birthdaystore/assets/effect.js"></script>
+
+<script src="birthdaystore/custom.js"></script>
 
 </body>
 </html>
