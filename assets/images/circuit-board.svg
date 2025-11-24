@@ -1,0 +1,73 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b026ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f72585;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Geometric Pattern Background -->
+  <g id="bg-pattern" opacity="0.1">
+    <path d="M0 0 L800 0 L800 600 L0 600 Z" fill="none" stroke="url(#gradient1)" stroke-width="1"/>
+    <line x1="0" y1="0" x2="800" y2="600" stroke="url(#gradient1)" stroke-width="0.5" opacity="0.3"/>
+    <line x1="800" y1="0" x2="0" y2="600" stroke="url(#gradient1)" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="400" cy="300" r="200" fill="none" stroke="url(#gradient1)" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Main Circuit Board Path -->
+  <g id="circuit-path" stroke="url(#gradient1)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path class="draw-line" d="M 50 300 L 150 300 L 150 200 L 250 200" />
+    <path class="draw-line" d="M 250 200 L 350 200 L 350 300 L 450 300" />
+    <path class="draw-line" d="M 450 300 L 550 300 L 550 400 L 650 400" />
+    <path class="draw-line" d="M 650 400 L 750 400" />
+    
+    <!-- Branching paths -->
+    <path class="draw-line" d="M 250 200 L 250 100" />
+    <path class="draw-line" d="M 450 300 L 450 400 L 350 400" />
+    <path class="draw-line" d="M 550 400 L 550 500" />
+  </g>
+
+  <!-- Connection Nodes -->
+  <g id="nodes" fill="url(#gradient1)">
+    <circle class="node" cx="50" cy="300" r="8" />
+    <circle class="node" cx="150" cy="200" r="8" />
+    <circle class="node" cx="250" cy="200" r="8" />
+    <circle class="node" cx="350" cy="300" r="8" />
+    <circle class="node" cx="450" cy="300" r="8" />
+    <circle class="node" cx="550" cy="400" r="8" />
+    <circle class="node" cx="650" cy="400" r="8" />
+    <circle class="node" cx="750" cy="400" r="8" />
+    <circle class="node" cx="250" cy="100" r="8" />
+    <circle class="node" cx="350" cy="400" r="8" />
+    <circle class="node" cx="550" cy="500" r="8" />
+  </g>
+
+  <!-- Decorative Hexagons -->
+  <g id="hexagons" stroke="url(#gradient2)" stroke-width="2" fill="none">
+    <polygon class="hex" points="100,150 120,140 140,150 140,170 120,180 100,170" opacity="0.6"/>
+    <polygon class="hex" points="300,250 320,240 340,250 340,270 320,280 300,270" opacity="0.6"/>
+    <polygon class="hex" points="500,350 520,340 540,350 540,370 520,380 500,370" opacity="0.6"/>
+    <polygon class="hex" points="700,450 720,440 740,450 740,470 720,480 700,470" opacity="0.6"/>
+  </g>
+
+  <!-- Animated Dots -->
+  <g id="animated-dots" fill="#00f0ff">
+    <circle class="dot-1" cx="50" cy="300" r="4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle class="dot-2" cx="250" cy="200" r="4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <circle class="dot-3" cx="450" cy="300" r="4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle class="dot-4" cx="650" cy="400" r="4" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
