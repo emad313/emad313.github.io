@@ -1,0 +1,20 @@
+{
+  "name": "Emad Uddin - Full Stack Engineer Portfolio",
+  "short_name": "Emad Uddin",
+  "description": "Full Stack Developer specializing in React, Vue, Node.js, Laravel, Flutter. Building modern web and mobile applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00ff88",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["portfolio", "technology", "development"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
